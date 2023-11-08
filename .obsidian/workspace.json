@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8588d0bb4755926c",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "3802eb804b476d44",
             "type": "leaf",
             "state": {
@@ -26,9 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f2b0f6687b3821cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Yum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ad1816645148182",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,8 +110,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bash.md",
-                "collapseAll": false,
+                "file": "Java.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -111,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bash.md",
+                "file": "Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,16 +150,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bash.md"
+                "file": "Java.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,8 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3802eb804b476d44",
+  "active": "5ad1816645148182",
   "lastOpenFiles": [
+    "Yum.md",
+    "Java.md",
     "Bash.md"
   ]
 }
