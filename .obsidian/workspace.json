@@ -42,9 +42,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c4bf76a89c93f784",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bash.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cad215196fce806",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript Typescript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java.md",
+                "file": "Javascript Typescript.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java.md",
+                "file": "Javascript Typescript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java.md"
+                "file": "Javascript Typescript.md"
               }
             }
           }
@@ -171,10 +195,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad1816645148182",
+  "active": "6cad215196fce806",
   "lastOpenFiles": [
-    "Yum.md",
+    "Bash.md",
+    "Javascript Typescript.md",
+    "Untitled",
+    "Markdown.md",
     "Java.md",
-    "Bash.md"
+    "Yum.md"
   ]
 }
