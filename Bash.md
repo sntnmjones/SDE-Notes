@@ -4,6 +4,16 @@
 hexdump -C <file>.crt
 ```
 
+## scp
+From local to server
+```bash
+scp -i ~/.ssh/id_rsa utimaco/Administration/p11tool2 ssm-user@i-0e005241698fa326c:/home/ssm-user
+```
+
+From server to local
+```bash
+
+```
 ## ssh
 ### Tunneling
 #### Access local file from remote 
