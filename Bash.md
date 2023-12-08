@@ -21,6 +21,11 @@ From server to local
 ```
 ssh -i ~/.ssh/<privateSshKey> -N -L <localPort>:<destHost>:<remotePort> <jumpHost>
 ```
+
+### Errors
+#### kex_exchange_identification: Connection closed by remote host
+This error can happen when the host is offline (e.g. reboot)
+
 ## xxd
 ### Echo hex file to std out
 ```bash
