@@ -1,2 +1,2 @@
 ## Applications
-Gear Lever: Application to manage AppImages
+**Gear Lever**: Application to manage AppImages
