@@ -1,3 +1,9 @@
+## date
+### Print date in ISO-8601
+```bash
+date +"%Y-%m-%dT%H:%M:%S.%3N%z
+```
+
 ## hexdump
 ### Read crt or hex to ascii
 ```bash
