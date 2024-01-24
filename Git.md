@@ -14,3 +14,18 @@ stash show -p stash@{0}
 ```bash
 git stash pop stash@{1}
 ```
+
+### Add default git message
+Add template to `~/.gitmessage`
+
+### Cherry pick change from another package
+```bash
+git --git-dir=../<some_other_repo>/.git \
+format-patch -k -1 --stdout <commit SHA> | \
+git am -3 -k
+```
+
+### Search if a string has ever been in the repo
+`git -C <package> log -S <string> --source --all`
+### Local ignore
+`vim .git/info/exclude`
