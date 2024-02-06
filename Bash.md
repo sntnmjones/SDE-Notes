@@ -10,6 +10,15 @@ date +"%Y-%m-%dT%H:%M:%S.%3N%z
 hexdump -C <file>.crt
 ```
 
+## rsync
+### Copy folder from one host to another
+
+Goes from source to destination  
+  
+`rsync -avh --progress .aws [dev-dsk-jnesztr-2b-4f539faa.us-west-2.amazon.com](http://dev-dsk-jnesztr-2b-4f539faa.us-west-2.amazon.com/):`  
+  
+or `rsync --recursive jnesztr.aka.corp.amazon.com:MacWorkplace/CandidatePortalTest/build/CandidatePortalTest/CandidatePortalTest-1.0/AL2_x86_64/DEV.STD.PTHREAD/build/brazil-integ-tests/ss ~/Downloads/Tmp`
+
 ## scp
 From local to server
 ```bash
