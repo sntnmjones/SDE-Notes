@@ -25,3 +25,37 @@ The `%X` will display the ThreadContext
     </Loggers>  
 </Configuration>
 ```
+
+### Printing context at runtime
+Add `%X` in log4j.xml
+```xml
+<Console name="Console" target="SYSTEM_OUT">
+	<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %X - %msg%n"/>
+</Console>
+```
+
+In service code
+```java
+ThreadContext.put("provisioningId", "1234");
+LOGGER.info("hey");
+ThreadContext.remove("provisioningId");
+
+ThreadContext.put("provisioningId", "5678");
+LOGGER.info("hey");
+ThreadContext.remove("provisioningId");
+
+ThreadContext.put("otherStat", "what?");
+ThreadContext.put("provisioningId", "9012");
+LOGGER.info("hey");
+ThreadContext.clearMap();
+
+LOGGER.info("hey");
+```
+
+Log output
+```bash
+12:38:50.190 [main] INFO  sandbox.logging.Main {provisioningId=1234} - hey
+12:38:50.192 [main] INFO  sandbox.logging.Main {provisioningId=5678} - hey
+12:38:50.192 [main] INFO  sandbox.logging.Main {otherStat=what?, provisioningId=9012} - hey
+12:38:50.192 [main] INFO  sandbox.logging.Main {} - hey
+```
