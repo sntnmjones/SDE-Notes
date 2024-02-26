@@ -5,6 +5,14 @@
 date +"%Y-%m-%dT%H:%M:%S.%3N%z
 ```
 
+### find
+Do an operation for every file. The escaped semicolon is necessary to avoid '
+find: missing argument to -exec' error
+
+```bash
+find configuration/mtls -type f -exec chmod 644 {} \;
+```
+
 ### hexdump
 #### Read crt or hex to ascii
 ```bash
