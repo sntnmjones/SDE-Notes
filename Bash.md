@@ -1,4 +1,9 @@
 ## Commands
+### chown
+Change the owner of a directory and its children
+```sh
+sudo chown -R amznadmin:amznadmin /home/amznadmin
+```
 ### date
 #### Print date in ISO-8601
 ```bash
