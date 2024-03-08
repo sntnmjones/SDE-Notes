@@ -21,7 +21,10 @@ The `%X` will display the ThreadContext
         <Root level="INFO">  
             <AppenderRef ref="Console"/>  
             <AppenderRef ref="File"/>  
-        </Root>  
+        </Root>
+        <!-- Change logging level for package -->
+        <Logger name="com.amazon.kuipersecurityprovisioningphase2" level="DEBUG"/>  
+		<Logger name="com.amazon.kuipersecurityprovisioning" level="TRACE"/>
     </Loggers>  
 </Configuration>
 ```
