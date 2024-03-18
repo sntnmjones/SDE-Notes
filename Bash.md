@@ -72,6 +72,14 @@ ssh -i ~/.ssh/<privateSshKey> -N -L <localPort>:<destHost>:<remotePort> <jumpHos
 ##### kex_exchange_identification: Connection closed by remote host
 This error can happen when the host is offline (e.g. reboot)
 
+
+### tcpdump
+https://www.cyberciti.biz/howto/question/man/tcpdump-man-page-with-examples.php
+Listen on a port
+```
+sudo tcpdump port 443 and '(tcp-syn|tcp-ack)!=0' | grep 50.231.162.106
+```
+
 ### xxd
 #### Echo hex file to std out
 ```bash
