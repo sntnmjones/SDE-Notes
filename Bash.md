@@ -24,6 +24,23 @@ find configuration/mtls -type f -exec chmod 644 {} \;
 hexdump -C <file>.crt
 ```
 
+### ldd
+list dynamic dependencies
+-v for more verbose output
+https://www.howtoforge.com/linux-ldd-command/
+```
+ldd sar_generate_certificate_request
+        linux-vdso.so.1 (0x00007fffbc50d000)
+        libjson-c.so.3 => /lib64/libjson-c.so.3 (0x00007f5f31223000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007f5f3121e000)
+        libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f5f30e00000)
+        libm.so.6 => /lib64/libm.so.6 (0x00007f5f31143000)
+        libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f5f31128000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f5f31121000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007f5f30a00000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f5f3123d000)
+```
+
 ### rsync
 #### Copy folder from one host to another
 
