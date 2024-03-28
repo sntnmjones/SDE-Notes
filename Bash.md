@@ -104,6 +104,58 @@ xxd -p <file>.crt
 ```
 
 ## Mechanisms
+#### Check if password authentication enabled
+```
+sudo cat /etc/ssh/sshd_config  | grep Authentication
+```
+
+#### Check OS version
+```
+cat /etc/os-release
+```
+
+#### Print the command of every process 
+```
+top -bcn1 -w512
+```
+
+#### Print the command of every process sorted by mem
+`-` Before VIRT sorts asc, replace VIRT with other column header to sort by different value
+```
+top -bcn1 -w512 -o -VIRT
+```
+### Get sorted list of processes using most memory
+```
+ps -o pid,user,%mem,command ax | sort -b -k3 -r
+```
+### Get total number of threads
+```
+ps -eo nlwp | tail -n +2 | awk '{ num_threads += $1 } END { print num_threads }'
+```
+### Print command using pid
+substitute your pid
+```
+cat /proc/23572/cmdline
+```
+### Find command using port
+```
+cat /proc/$(lsof -t -i:5006)/cmdline
+```
+### Find process using port
+
+```
+lsof -t -i:5006
+```
+### List directories by size
+
+```
+sudo du -m --max-depth 1 . | sort -n
+```
+### Find largest child directory (recommended)
+
+```
+sudo du --max-depth=1 -Lach 2> /dev/null | sort -h
+```
 ### Logging
 Result : 2024-02-14T17:54:34.487+0000] message
 ```sh
